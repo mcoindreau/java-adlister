@@ -5,6 +5,8 @@
             <a class="navbar-brand" href="/ads">Adlister</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/login">Login</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
