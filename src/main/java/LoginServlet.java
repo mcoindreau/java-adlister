@@ -9,7 +9,7 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet", urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (request.getSession().getAttribute("user") == null) {
+        if (request.getSession().getAttribute("user") == null) { //can't use false, must use null; tests to see if session is null
             response.sendRedirect("/login.jsp");
         } else {
             request.getRequestDispatcher("/profile.jsp").forward(request, response);
