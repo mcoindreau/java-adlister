@@ -14,7 +14,7 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO: show the registration form
-        request.getRequestDispatcher("/WEB-INF/register.jsp")
+        request.getRequestDispatcher("/register.jsp")
         .forward(request, response);
     }
 
